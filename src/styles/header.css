@@ -1,9 +1,11 @@
 header {
     width: 100%;
     padding: 20px 8%;
-    position: sticky; /* Fixar o header no topo */
+    position: sticky;
+    /* Fixar o header no topo */
     top: 0;
-    background-color: #82ff72; /* Cor de fundo */
+    background-color: #82ff72;
+    /* Cor de fundo */
     z-index: 3;
     border: 1px solid rgba(0, 0, 0, 0.13);
 }
@@ -47,7 +49,7 @@ header {
 /* Estilo do item ativo na navegação */
 .nav-item.active a {
     color: black;
-    border-bottom: 3px solid black; 
+    border-bottom: 3px solid black;
 }
 
 /* Esconde elementos mobile inicialmente */
@@ -58,6 +60,7 @@ header {
 
 /* Breakpoint para tablets (1170px) */
 @media screen and (max-width: 1170px) {
+
     /* Esconde navegação desktop */
     #nav_list,
     #navbar .btn-default {
@@ -85,7 +88,7 @@ header {
     #mobile_nav_list {
         display: flex;
         flex-direction: column;
-        gap: 12px; 
+        gap: 12px;
         margin: 12px 0px;
     }
 
@@ -106,9 +109,11 @@ header {
         text-align: center;
         display: block;
     }
+
     .title br {
         display: block;
     }
+
     .title span {
         display: block;
         margin-top: 8px;

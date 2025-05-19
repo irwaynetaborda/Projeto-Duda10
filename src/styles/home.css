@@ -1,8 +1,8 @@
 /* Seção principal */
 #home {
     display: flex;
-    min-height: calc(100vh - 91px); 
-    position: relative; 
+    min-height: calc(100vh - 91px);
+    position: relative;
 }
 
 /* Container do conteúdo do lado esquerdo */
@@ -10,8 +10,8 @@
     width: 35%;
     display: flex;
     flex-direction: column;
-    gap: 40px; 
-    margin-top: 5%; 
+    gap: 40px;
+    margin-top: 5%;
 }
 
 /* Estilo do título principal */
@@ -33,7 +33,7 @@
 /* Container dos botões de ação */
 #cta_buttons {
     display: flex;
-    gap: 24px; 
+    gap: 24px;
 }
 
 /* Container da imagem do banner (lado direito) */
@@ -41,13 +41,13 @@
     display: flex;
     align-items: start;
     justify-content: end;
-    width: 70%; 
-    z-index: 2; 
+    width: 70%;
+    z-index: 2;
 }
 
 /* Forma decorativa atrás do banner */
 .shape {
-    background-color: #e38799; 
+    background-color: #e38799;
     width: 45%;
     height: 82%;
     position: absolute;
@@ -55,7 +55,7 @@
     margin-top: 30px;
     top: 0;
     right: 0;
-    z-index: 1; 
+    z-index: 1;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -65,7 +65,7 @@
 .shape img {
     max-width: 90%;
     max-height: 90%;
-    object-fit: contain; 
+    object-fit: contain;
     display: block;
 }
 
@@ -95,16 +95,24 @@ button {
 
 /* Animação das bordas ao passar o mouse */
 @keyframes movingBorders {
-    0% { border-color: #fce4e4; }
-    50% { border-color: #ffd8d8; }
-    90% { border-color: #fce4e4; }
+    0% {
+        border-color: #fce4e4;
+    }
+
+    50% {
+        border-color: #ffd8d8;
+    }
+
+    90% {
+        border-color: #fce4e4;
+    }
 }
 
 /* Efeito hover nos botões */
 #cta_buttons button:hover {
     background-color: #eee;
     transform: scale(105%);
-    animation: movingBorders 3s infinite; 
+    animation: movingBorders 3s infinite;
 }
 
 /* Container do botão de coração */
@@ -160,38 +168,73 @@ button {
 }
 
 /* Estado quando marcado */
-.heart-btn-container .heart-checkbox:checked ~ .svg-container .svg-outline {
+.heart-btn-container .heart-checkbox:checked~.svg-container .svg-outline {
     display: none;
 }
 
-.heart-btn-container .heart-checkbox:checked ~ .svg-container .svg-filled {
+.heart-btn-container .heart-checkbox:checked~.svg-container .svg-filled {
     display: block;
-    animation: beatingHeart 1.2s infinite; /* Pulsação contínua */
+    animation: beatingHeart 1.2s infinite;
+    /* Pulsação contínua */
 }
 
-.heart-btn-container .heart-checkbox:checked ~ .svg-container .svg-celebrate {
+.heart-btn-container .heart-checkbox:checked~.svg-container .svg-celebrate {
     display: block;
 }
 
 /* Animações para os SVGs */
 @keyframes keyframes-svg-filled {
-    0% { transform: scale(0); }
-    25% { transform: scale(1.2); }
-    50% { transform: scale(1); filter: brightness(1.5); }
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+        filter: brightness(1.5);
+    }
 }
 
 @keyframes keyframes-svg-celebrate {
-    0% { transform: scale(0); }
-    50% { opacity: 1; filter: brightness(1.5); }
-    100% { transform: scale(1.4); opacity: 0; display: none; }
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        filter: brightness(1.5);
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+        display: none;
+    }
 }
 
 @keyframes beatingHeart {
-    0% { transform: scale(1); }
-    15% { transform: scale(1.15); }
-    30% { transform: scale(1); }
-    45% { transform: scale(1.15); }
-    60% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.15);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.15);
+    }
+
+    60% {
+        transform: scale(1);
+    }
 }
 
 /* Texto ao lado do coração */
@@ -203,7 +246,7 @@ button {
 /* Responsividade para tablets e mobile */
 @media screen and (max-width: 1170px) {
     #cta .title {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 
     #home {
@@ -223,13 +266,13 @@ button {
     }
 
     .shape img {
-        max-width: 60vw; 
-        max-height: 30vh; 
+        max-width: 60vw;
+        max-height: 30vh;
         margin: 0 auto;
     }
 
     #cta {
-        width: 100%; 
+        width: 100%;
         text-align: center;
         align-items: center;
     }

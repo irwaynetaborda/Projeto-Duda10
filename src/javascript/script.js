@@ -95,15 +95,15 @@ $(document).ready(function () {
 });
 
 // Sincroniza o clique no botão com o checkbox do coração
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const btn = document.getElementById('vote-btn');
     const checkbox = document.getElementById('vote-heart');
-    
+
     if (btn && checkbox) {
-        btn.addEventListener('click', function(e) {
+        btn.addEventListener('click', function (e) {
             // Evita conflito quando clica diretamente no checkbox
             if (e.target === checkbox) return;
-            
+
             // Alterna o estado do checkbox
             checkbox.checked = !checkbox.checked;
             e.preventDefault();

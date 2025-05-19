@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 0px 8% 24px 8%; 
+    padding: 0px 8% 24px 8%;
 }
 
 /* Estilo do texto de copyright */
@@ -19,14 +19,16 @@
     position: relative;
     width: 100%;
     height: auto;
-    overflow: hidden; 
-    line-height: 0; 
+    overflow: hidden;
+    line-height: 0;
 }
 
 /* Estilo base das ondas */
 .footer-waves .wave {
     display: block;
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
@@ -38,19 +40,22 @@
         flex-direction: column;
         gap: 20px;
     }
-    
+
     /* Ajuste das ondas para dispositivos móveis */
     .footer-waves .wave {
-        width: 200vw; /* Largura expandida para cobrir toda a viewport */
+        width: 200vw;
+        /* Largura expandida para cobrir toda a viewport */
         min-width: 200vw;
         max-width: 200vw;
         position: relative;
         left: 50%;
-        transform: translateX(-50%); /* Centraliza horizontalmente */
+        transform: translateX(-50%);
+        /* Centraliza horizontalmente */
     }
-    
+
     /* Previne scroll horizontal em mobile */
-    body, html {
+    body,
+    html {
         overflow-x: hidden;
     }
 }
