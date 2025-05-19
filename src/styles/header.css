@@ -1,7 +1,7 @@
 header {
     width: 100%;
     padding: 20px 8%;
-    position: static;
+    position: fixed;
     top: 0;
     background-color: #82ff72;
     z-index: 3;
