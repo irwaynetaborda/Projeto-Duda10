@@ -1,11 +1,9 @@
 header {
     width: 100%;
     padding: 20px 8%;
-    position: sticky;
-    /* Fixar o header no topo */
+    position: static;
     top: 0;
     background-color: #82ff72;
-    /* Cor de fundo */
     z-index: 3;
     border: 1px solid rgba(0, 0, 0, 0.13);
 }
