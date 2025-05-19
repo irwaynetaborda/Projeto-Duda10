@@ -30,6 +30,7 @@
     width: calc(26% - 16px); 
     min-width: 260px; 
     padding: 20px;
+    padding-top: 40px;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1); 
     position: relative; 
     overflow: hidden; 
