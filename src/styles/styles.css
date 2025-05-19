@@ -1,0 +1,111 @@
+/* Importações de fontes e arquivos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('proposals.css');
+@import url('about.css');
+@import url('footer.css');
+
+/* Reset básico e configurações globais */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Scroll suave para navegação interna */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cor de fundo padrão do body */
+body {
+    background-color: #e00065;
+}
+
+/* Padding padrão para todas as seções */
+section {
+    padding: 20px 8%; 
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+
+/* Estilo base para botões principais */
+.btn-default {
+  background-color: #e00065;
+  position: relative;
+  padding: 1px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 25px; 
+  outline: none;
+  overflow: hidden; 
+  color: rgb(0, 0, 0);
+  transition: color 0.3s 0.1s ease-out; 
+  text-align: center;
+}
+
+/* Texto dentro do botão */
+.btn-default span {
+  color: white;  
+  margin: 10px;
+}
+
+/* Efeito de fundo animado */
+.btn-default::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+/* Efeitos hover do botão */
+.btn-default:hover {
+  color: #ffffff;
+  border: 1px solid rgb(2, 2, 2);
+  background-color: rgb(255, 84, 184);
+}
+
+.btn-default:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255, 44, 167); 
+}
+
+/* Estilo para títulos de seção */
+.section-title {
+    font-size: 2.8rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo para subtítulos de seção */
+.section-subtitle {
+    font-size: 2.1875rem;
+}
+
+/* Ícones de coração */
+.fa-heart {
+    color: #e00065;
+}
+
+/* Estilo para parágrafos de feedback */
+.feedback-content p {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+}

@@ -1,0 +1,99 @@
+/* Seção principal do menu */
+#proposals {
+    background-color: #e00065;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 100px 0; 
+}
+
+/* Container das propostas */
+#proposals-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 24px; 
+    margin-top: 32px; 
+}
+
+/* Card individual da proposta */
+.proposal-card {
+    text-align: center;
+    background-color: #e38799; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px; 
+    width: calc(26% - 16px); 
+    min-width: 260px; 
+    padding: 20px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+
+/* Efeito hover para feedback visual */
+.proposal-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Coração decorativo no canto */
+.proposal-badge {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #e00065; 
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border: 1px solid black;
+    border-radius: 0px 37.5px 0px 42.5px; 
+    z-index: 1;
+}
+
+/* Título do prato com espaçamento ajustado */
+.proposal-title {
+    margin-top: 30px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2; 
+}
+
+/* Descrição da proposta */
+.proposal-description {
+    padding-top: 15px;
+    color: #000000;
+    text-align: justify; 
+    line-height: 1.5; 
+}
+
+/* Responsividade para tablets */
+@media screen and (max-width: 1170px) {
+    .proposal-card {
+        width: calc(50% - 12px); 
+        min-width: auto; 
+    }
+}
+
+/* Responsividade para mobile */
+@media screen and (max-width: 600px) {
+    .proposal-card {
+        width: 100%; 
+        max-width: 350px; 
+    }
+    
+    /* Centraliza subtítulo em mobile */
+    #proposals .section-subtitle {
+        text-align: center;
+        padding: 0 20px;
+    }
+}

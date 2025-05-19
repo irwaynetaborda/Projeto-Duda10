@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <!-- Favicon do site -->
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon">
+
+    <!-- jQuery e ScrollReveal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Duda 10!</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <!-- Logo Principal -->
+            <div class="logod">
+                <img src="src/images/Duda10_Logo2_20251.png" alt="Logo Duda10">
+            </div>
+            <!-- Menu de navegação -->
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Apresentação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proposals">Propostas</a>
+                </li>
+            </ul>
+
+            <!-- Botão do Instagram -->
+            <a href="https://www.instagram.com/duda10candidata/" target="_blank" class="btn-default">
+                <svg viewBox="0 0 16 16" class="bi bi-instagram" fill="white" height="16" width="16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                    </path>
+                </svg>
+                <span>Instagram</span>
+            </a>
+
+            <!-- Botão do menu mobile -->
+            <button id="mobile_btn" aria-label="Abrir menu de navegação">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Menu mobile -->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Apresentação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proposals">Propostas</a>
+                </li>
+            </ul>
+
+            <!-- Botão Instagram no menu mobile -->
+            <a href="https://www.instagram.com/duda10candidata/" target="_blank" class="btn-default">
+                <span>Instagram</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- Seção principal -->
+        <section id="home">
+            <div class="shape">
+                <img src="src/images/1.png" alt="imagem duda principal" id="banner">
+            </div>
+            <div id="cta">
+                <h1 class="title">
+                    Duda Andrade<br>
+                    <span>Por você, <br>com você!</span>
+                </h1>
+
+                <p class="description">
+                    Todo mundo merece uma Univale que escute, inclua e transforme.
+                    Se você também acredita nisso, vem comigo!
+                    Juntos, vamos fazer a diferença.
+                </p>
+
+                <p style="font-size: 25px;">Campanha Fictícia</p>
+
+                <div id="cta_buttons">
+                    <!-- Botão animado de voto -->
+                    <button id="vote-btn">
+                        <div class="heart-btn-container">
+                            <input type="checkbox" class="heart-checkbox" id="vote-heart">
+                            <div class="svg-container">
+                                <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path>
+                                </svg>
+                                <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="10,10 20,20"></polygon>
+                                    <polygon points="10,50 20,50"></polygon>
+                                    <polygon points="20,80 30,70"></polygon>
+                                    <polygon points="90,10 80,20"></polygon>
+                                    <polygon points="90,50 80,50"></polygon>
+                                    <polygon points="80,80 70,70"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="btn-text">Vote Duda10!</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de apresentação -->
+        <section id="about">
+            <img src="src/images/3.png" id="profile-image" alt="imagem duda">
+
+            <div id="about-content">
+                <h2 class="section-title">
+                    Sobre mim
+                </h2>
+                <h3 class="section-subtitle">
+                    Um pouco da minha história
+                </h3>
+
+                <div id="about-section">
+                    <div class="about-card">
+                        <div class="feedback-content">
+                            <p>
+                                Sou Duda Andrade, nascida em 24 de dezembro de 1990 em
+                                Governador Valadares, filha de pais sem formação no
+                                ensino médio e a primeira da família a ingressar no
+                                ensino superior.
+                                <br>Minha trajetória é marcada por desafios:
+                                após ter o curso de Jornalismo interrompido por falta de
+                                verba na Univale, trabalhei como caixa de supermercado
+                                enquanto cuidava da minha mãe doente.
+                                <br>Mesmo após perder
+                                meus pais, persisti nos estudos, me formei em Jornalismo
+                                em Juiz de Fora e hoje sou doutora em Comunicação.
+                                <br>Mãe solo do meu pequeno Joaquim, presidi a Câmara de Juiz
+                                de Fora, onde criei projetos voltados para educação,
+                                alimentação escolar e acessibilidade cultural.
+                                <br>Agora,
+                                retorno à Univale para transformar a realidade que quase
+                                interrompeu meu próprio sonho.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">
+                    Identificação Política
+                </h3>
+                <div id="about-section">
+                    <div class="about-card">
+                        <div class="feedback-content">
+                            <p><strong>Nome da Candidata:</strong> Duda Andrade</p>
+                            <p><strong>Partido Político:</strong> PCOM (Partido do Comunicador)</p>
+                            <p><strong>Número da Candidatura:</strong> 10</p>
+                            <p><strong>Partido Inspirador:</strong> PDT (Partido Democrático Trabalhista)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de propostas -->
+        <section id="proposals">
+            <h2 class="section-title">Propostas</h2>
+            <h3 class="section-subtitle">Minhas principais propostas</h3>
+
+            <div id="proposals-container">
+                <!-- Representa uma proposta -->
+                <div class="proposal-card">
+                    <div class="proposal-badge">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3 class="proposal-title">
+                        MELHORIA DA INFRAESTRUTURA E ESTRUTURA FÍSICA
+                    </h3>
+
+                    <span class="proposal-description">
+                        • Solicitação formal à reitoria para reforma das salas de aula, com troca de
+                        mobiliário e melhoria da ventilação e iluminação;<br><br>
+                        • Substituição da iluminação por lâmpadas LED em todos os blocos;<br><br>
+                        • Atualização dos equipamentos de uso coletivo, como projetores, computadores e
+                        kits audiovisuais;<br><br>
+                        • Reivindicação por Wi-Fi de alta velocidade, com cobertura completa dos blocos
+                        utilizados pelos cursos de comunicação.
+                    </span>
+
+                </div>
+
+                <div class="proposal-card">
+                    <div class="proposal-badge">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3 class="proposal-titl">
+                        BANHEIROS DIGNOS E FUNCIONAIS
+                    </h3>
+
+                    <span class="proposal-description">
+                        <br>• Lançamento da campanha "Banheiro Digno", voltada à revitalização e manutenção
+                        constante dos banheiros;<br><br>
+                        • Cobrança institucional por abastecimento regular de papel higiênico, sabonete e
+                        itens de higiene menstrual;<br><br>
+                        • Criação de um canal direto de comunicação com a coordenação para relatar falhas
+                        nos serviços de limpeza.
+                    </span>
+
+                </div>
+
+                <div class="proposal-card">
+                    <div class="proposal-badge">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3 class="proposal-title">
+                        ESTRUTURAÇÃO DAS PRÁTICAS ACADÊMICAS E CONEXÃO COM O
+                        MERCADO
+
+                    </h3>
+
+                    <span class="proposal-description">
+                        • Estabelecimento de parcerias com agências e veículos de comunicação locais
+                        para oferta de oficinas práticas mensais;<br><br>
+                        • Ampliação e modernização dos laboratórios de comunicação, com aquisição de
+                        câmeras, microfones e kits de gravação;<br><br>
+                        • Proposta de atualização das disciplinas com cases reais do mercado, projetos
+                        integrados e oficinas de Inteligência Artificial aplicada à comunicação.
+
+                    </span>
+
+                </div>
+
+                <div class="proposal-card">
+                    <div class="proposal-badge">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3 class="proposal-title" style="padding-top: 10px;">
+                        COMUNICAÇÃO INSTITUCIONAL EFICIENTE E INTEGRADA
+                    </h3>
+
+                    <span class="proposal-description">
+                        • Incentivo ao uso e aprimoramento do Aplicativo Oficial da Univale, com
+                        centralização de prazos, editais, notas e avisos;<br><br>
+                        • Sugestão de melhorias no app para que ele se torne mais intuitivo e acessível para
+                        todos os cursos;<br><br>
+                        • Estímulo à criação de pontos físicos de comunicação, como mural digital
+                        atualizado pelos próprios alunos.
+                    </span>
+
+                </div>
+
+                <div class="proposal-card">
+                    <div class="proposal-badge">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3 class="proposal-title">
+                        ACESSIBILIDADE E INCLUSÃO REAL
+                    </h3>
+
+                    <span class="proposal-description">
+                        • Cobrança pela instalação de elevador no ED2, visando a acessibilidade entre os
+                        andares;<br><br>
+                        • Adaptação de banheiros e ambientes para garantir acesso pleno a pessoas com
+                        deficiência;<br><br>
+                        • Solicitação de materiais didáticos em libras e braile para disciplinas selecionadas;<br><br>
+                        • Melhoria da sinalização de espaços com foco na mobilidade e orientação de todos
+                        os perfis de alunos.
+
+                    </span>
+
+                </div>
+
+                <div class="proposal-card">
+                    <div class="proposal-badge">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3 class="proposal-title">
+                        ESPAÇOS DE CONVIVÊNCIA E ALIMENTAÇÃO
+                    </h3>
+
+                    <span class="proposal-description">
+                        • Revitalização do pátio dos cursos com áreas de descanso, bancos, tomadas e
+                        pufes;<br><br>
+                        • Criação de espaços de estudo ao ar livre, com cobertura e iluminação adequada;<br><br>
+                        • Reformulação da cantina com cardápio mais acessível e saudável, com divulgação
+                        semanal nas redes sociais da gestão estudantil.
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-waves">
+            <img src="src/images/wave2.svg" alt="ondas de fundo" class="wave wave-back">
+            <img src="src/images/wave.svg" alt="ondas de frente" class="wave wave-front">
+        </div>
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2025
+            </span>
+            <span id="desenv">Desenvolvido por Irwayne Taborda</span>
+        </div>
+    </footer>
+    
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>

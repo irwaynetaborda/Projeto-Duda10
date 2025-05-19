@@ -1,0 +1,124 @@
+header {
+    width: 100%;
+    padding: 20px 8%;
+    position: sticky; /* Fixar o header no topo */
+    top: 0;
+    background-color: #82ff72; /* Cor de fundo */
+    z-index: 3;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+/* Container principal da navbar */
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Container do logo e elementos adjacentes */
+.logod {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo da imagem do logo */
+.logod img {
+    width: 200px;
+    height: auto;
+}
+
+/* Lista de navegação desktop */
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+/* Estilo dos links de navegação */
+.nav-item a {
+    text-decoration: none;
+    color: #000000ad;
+    font-weight: 600;
+}
+
+/* Estilo do item ativo na navegação */
+.nav-item.active a {
+    color: black;
+    border-bottom: 3px solid black; 
+}
+
+/* Esconde elementos mobile inicialmente */
+#mobile_btn,
+#mobile_menu {
+    display: none;
+}
+
+/* Breakpoint para tablets (1170px) */
+@media screen and (max-width: 1170px) {
+    /* Esconde navegação desktop */
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    /* Mostra botão mobile */
+    #mobile_btn {
+        display: block;
+        color: black;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Menu mobile quando ativo */
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilos da lista mobile */
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px; 
+        margin: 12px 0px;
+    }
+
+    /* Remove estilo de lista e centraliza */
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+
+    /* Header deixa de ser sticky em mobile */
+    header {
+        position: static;
+    }
+
+    /* Ajustes de letra mobile */
+    .title {
+        font-size: 2.2rem;
+        text-align: center;
+        display: block;
+    }
+    .title br {
+        display: block;
+    }
+    .title span {
+        display: block;
+        margin-top: 8px;
+    }
+}
+
+/* Breakpoint adicional para telas grandes (1800px) */
+@media (max-width: 1800px) {
+    .title span {
+        display: block;
+        margin-top: 8px;
+    }
+}
