@@ -113,8 +113,8 @@ section {
 @media screen and (max-width: 600px) {
   .btn-default-mobile {
     height: 27px;
-    width: 110px;
-    margin-left: 80px;      /* Remova o deslocamento lateral */
+    width: 127px;
+    margin-left: 70px;      /* Remova o deslocamento lateral */
     display: flex;
     background-color: #e00065;
     position: relative;
@@ -128,7 +128,7 @@ section {
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
     align-self: center;  /* Garante centralização em flex column */
