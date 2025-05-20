@@ -137,10 +137,10 @@ header {
         height: 27px;
         width: 110px;
         margin-top: 15px;
+        margin-left: 100px;
         display: flex;
         background-color: #e00065;
         position: relative;
-        justify-self: center;
         padding: 1px 15px;
         align-items: center;
         font-size: 15px;
