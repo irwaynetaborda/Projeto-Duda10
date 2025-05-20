@@ -131,27 +131,3 @@ header {
         margin-top: 8px;
     }
 }
-
-@media screen and (max-width: 600px) {
-    .btn-default-mobile {
-        height: 27px;
-        width: 110px;
-        margin-top: 15px;
-        margin-left: 100px;
-        display: flex;
-        background-color: #e00065;
-        position: relative;
-        padding: 1px 15px;
-        align-items: center;
-        font-size: 15px;
-        font-weight: 500;
-        text-decoration: none;
-        cursor: pointer;
-        border-radius: 25px;
-        outline: none;
-        overflow: hidden;
-        color: rgb(0, 0, 0);
-        transition: color 0.3s 0.1s ease-out;
-        text-align: center;
-    }
-}
