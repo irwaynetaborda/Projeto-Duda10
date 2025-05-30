@@ -36,7 +36,7 @@ O layout é moderno, colorido e responsivo, com destaque para as seções de apr
 
 ## 💻 Demonstração
 
-https://irwayne.github.io/Projeto-Duda10/
+https://irwaynetaborda.github.io/Projeto-Duda10
 
 ---
 
