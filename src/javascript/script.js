@@ -53,8 +53,6 @@ $(document).ready(function () {
         $(navItems[activeSectionIndex]).addClass('active');
     });
 
-    // Configurações de animação com ScrollReveal para diferentes elementos:
-
     // Animação para o banner (vem da direita)
     ScrollReveal().reveal('#banner', {
         origin: 'right',
@@ -69,7 +67,7 @@ $(document).ready(function () {
         distance: '20%'
     });
 
-    // Animação para os pratos (vem da esquerda)
+    // Animação para as propostas (vem da esquerda)
     ScrollReveal().reveal('.proposal-card', {
         origin: 'left',
         duration: 2000,
@@ -77,7 +75,7 @@ $(document).ready(function () {
         easing: 'ease'
     });
 
-    // Animação para a foto do chef (vem da esquerda)
+    // Animação para a foto (vem da esquerda)
     ScrollReveal().reveal('#profile-image', {
         origin: 'left',
         duration: 2600,
